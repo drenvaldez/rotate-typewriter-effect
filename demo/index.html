@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head>
+    <meta charset="UTF-8">
+    <title>jQuery.textTicker() Demo</title>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/indexvis.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+<body>
+
+
+<form id="timerstart" action="">
+  <label for="keep">Keep:</label></br>
+  <input type="text" id="keep" name="keep" value="16"><br>
+  <label for="seconds">Time (Seconds):</label><br>
+  <input type="text" id="seconds" name="seconds" value="2"><br>
+  <label for="delay">Delay (ms):</label><br>
+  <input type="text" id="delay" name="delay" value="30"><br>
+  <label for="iterations">Iterations:</label><br>
+  <input type="text" id="iterations" name="iterations" value="1"><br>
+  <label for="secondsout">Time phase 2 (Seconds):</label><br>
+  <input type="text" id="secondsout" name="secondsout" value="3"><br>
+  <label for="ratio">ratio:</label><br>
+  <input type="range" id="ratio" name="ratio" min="1" max="100" value="80"><br>
+  <!-- <input type="text" id="ratio" name="ratio" value="0.8"><br> -->
+  <label for="dev">dev:</label></br>
+  <input type="checkbox" name="dev" id="dev"></br>
+  <!-- <input type="text" id="dev" name="dev" value="false"><br> -->
+  <input type="button" value="Start" name="start"/>
+</form>
+
+  <h1 class="ttt" id="target"></h1>
+
+<div id="holder" class="text tt-holder ttt_items">
+  <p class="tt">Your <i>partner</i> for <s>change</s></p>
+  <p class="tt">Your <i>partner</i> for <code>coding</code></p>
+  <p class="tt">Your <i>partner</i> for <a href="#target" target="_blank">life</a></p>
+  <p class="tt">Your <i>partner</i> for <span class="red">support</span> </p>
+</div>
+
+
+
+<button id="timerpause">Pause me</button>
+<button id="timerstop">Stop me</button>
+</body>
+</html>
